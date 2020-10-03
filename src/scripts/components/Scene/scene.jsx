@@ -55,7 +55,7 @@ class Scene extends React.Component {
 		var pacmanLastX = this.refs.pacman.state.position.left + this.refs.pacman.props.pacmanSize / 2;
 		var pacmanLastY = this.refs.pacman.state.position.top + this.refs.pacman.props.pacmanSize / 2;
 
-		for (var i = 1; i <= this.amountOfFood; i++) {
+		for (var i = 0; i <= this.amountOfFood; i++) {
 			var currentFood = this.refs['food' + i];
 			var currentFoodX = currentFood.state.position.left;
 			var currentFoodY = currentFood.state.position.top;
